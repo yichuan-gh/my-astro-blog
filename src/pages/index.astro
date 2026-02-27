@@ -1,0 +1,64 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main class="container mx-auto px-4 py-8">
+			<!-- 欢迎介绍模块 -->
+			<section class="mb-12">
+				<h1 class="text-3xl font-bold">你好，我是开发者小李</h1>
+				<p class="mt-4 text-lg">
+					一名热爱前端开发、持续学习新技术的独立开发者。欢迎来到我的个人网站！
+				</p>
+			</section>
+
+			<!-- 提供的服务模块 -->
+			<section class="mb-12">
+				<h2 class="text-2xl font-semibold border-b pb-2 mb-4">我能提供的服务</h2>
+				<ul class="list-disc list-inside space-y-2">
+					<li>静态网站搭建与部署（Astro、Next.js 等）</li>
+					<li>前端界面设计与实现</li>
+					<li>技术文档撰写与分享</li>
+					<li>小型全栈项目开发</li>
+				</ul>
+			</section>
+
+			<!-- 个人目标与价值模块 -->
+			<section class="mb-12">
+				<h2 class="text-2xl font-semibold border-b pb-2 mb-4">这个网站的意义</h2>
+				<p>这是我用来：</p>
+				<ul class="list-disc list-inside mt-2 space-y-1">
+					<li>测试学习成果</li>
+					<li>积累实战经验</li>
+					<li>验证个人能力</li>
+					<li>完成并分享小项目</li>
+				</ul>
+			</section>
+
+			<!-- 行动号召模块 -->
+			<section class="mb-12">
+				<h2 class="text-2xl font-semibold border-b pb-2 mb-4">开始探索</h2>
+				<p>
+					希望你能在这里找到灵感！如果想了解技术细节，请记得
+					<a href="https://docs.astro.build/" class="text-blue-500 hover:underline">阅读 Astro 文档</a>
+					或 <a href="https://astro.build/chat" class="text-blue-500 hover:underline">加入 Discord 社区</a>。
+				</p>
+				<p class="mt-4">
+					想找更有个性的博客模板？推荐查看
+					<a href="https://github.com/Charca/astro-blog-template" class="text-blue-500 hover:underline">astro-blog-template</a>
+					由 <a href="https://twitter.com/Charca" class="text-blue-500 hover:underline">Maxi Ferreira</a> 开发。
+				</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>
